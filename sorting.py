@@ -193,9 +193,29 @@ try:
     print(f"| Average Case: O(log^2(n)) comparisons, O(n*log^2(n)) swaps{' '*3}|")
     print(f"| Best Case: O(log^2(n)) comparisons, O(n*log^2(n)) swaps{' '*6}|")
     print(f"| Worst Case: O(n^2) comparisons{' '*31}|")
-    print(f"| Number of Operations: {num_operations} comparisons{' '*24}|")
+    print(f"| Number of Operations: {num_operations} comparisons{' '*25}|")
     print(f"| Running Time: {running_time} seconds{' '*21}|")
     print(f"| Time Complexity Case: {case}{' '*27}|")
+
+    # Space Complexity Analysis
+    print(f"|{'-'*62}|")
+    print(f"| Space Complexity Analysis{' '*36}|")
+    print(f"|{'-'*62}|")
+
+    print(f"| Global Variables:{' '*44}|")
+    print(f"| {'num_operations':<30}{'O(1)':<31}|")
+
+    print(f"| Function Parameters and Local Variables:{' '*21}|")
+    print(f"| {'n, swaps, avg_swaps, best_swaps, k, low, cnt':<40}{'O(1)':<16}|")
+    print(f"| {'arr':<30}{'O(n)':<30}|")
+    print(f"| {'valid_fields, choice':<30}{'O(1)':<30}|")
+    print(f"| {'data_from_database, input_data, sorted_data':<30}{'O(m)':<17}|")
+    print(f"| {'running_time, start_time, end_time, case':<40}{'O(1)':<20}|")
+    print(f"| {'db_connection, cursor':<32}{'Depends on DB implementation'}|")
+
+    print(f"| Other Constants and Literals:{' '*31}|")
+    print(f"| {'String literals, constants':<30}{'O(1)':<30}|")
+
     print(f"|{'-'*62}|")
 
     time.sleep(1)
